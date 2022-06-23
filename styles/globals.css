@@ -1,0 +1,676 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+}
+
+header > h1 {
+  font-size: 2.5rem;
+  margin-left:5rem;
+  z-index:1;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+header > nav > ul > a > li  {
+  list-style-type: none;
+  margin: 2em;
+  z-index:1;
+}
+
+header > a > button {
+  margin-right: 5rem;
+  z-index:1;
+  padding: 1em 2em;
+  border: 0;
+  border-radius: 2em;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(90deg, #6096FD 0%, #FA798D 107.58%);
+}
+
+header > button:hover {
+  background: linear-gradient(90deg, #FA798D 0%, #6096FD 107.58%);
+}
+
+.hero-section {
+  background-size: 80%;
+  min-height:80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.hero-section > div {
+  margin: 0;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  background:url('/images/waves.png') no-repeat right 35%, url('/images/circuits.png') no-repeat right 50%, url('/images/ellipse.png') no-repeat left 70%, url('/images/ellipse-right.png') no-repeat right 20% ;
+  z-index: -1;
+  background-size: 80%;
+  margin-top:5%;
+  height:160vh;
+  width: 100%;
+}
+
+.hero-description {
+  margin-top: 7em;
+  margin-left: 7em;
+  width: 40%;
+}
+
+.hero-description > h1 {
+  font-size: 2.5rem;
+}
+
+.hero-description > h1 > span {
+  color: #0D77F4;
+}
+
+.hero-description > p {
+  margin-top: 2em;
+  line-height: 1.7;
+}
+
+
+.hero-description > div > a > button {
+  padding: 1em 2em;
+  border: 0;
+  border-radius: 2em;
+  margin-top:2em;
+  margin-right: 4em;
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+  background: linear-gradient(90deg, #6096FD 0%, #FA798D 107.58%);
+}
+
+.hero-description > div > a > button:hover {
+  background: linear-gradient(90deg, #FA798D 0%, #6096FD 107.58%);
+}
+
+.learnmore-button {
+  background: transparent !important;
+  border: 0.1em solid #FA798D !important;
+  color: white !important;
+}
+
+.learnmore-button:hover {
+  border: 0.1em solid #6096FD !important;
+}
+
+.imageSlider {
+  width: 325px;
+  height: 450px;
+}
+
+.howitworks-section {
+  min-height: 110vh;
+  width: 100%;
+  margin-top: 6em;
+  display: flex;
+  justify-content:flex-start;
+  align-items:center;
+  flex-direction: column;
+}
+
+.howitworks-section::before {
+  content: '';
+  position: absolute;
+  background:url('/images/vector.png') no-repeat;
+  background-size: cover;
+  z-index: -1;
+  margin-top:0%;
+  height:110vh;
+  width: 100%;
+}
+
+.howitworks-section > h2 {
+  margin-top:2em;
+  font-weight: 300;
+}
+
+.howitworks-section > h1 {
+  font-weight: 300;
+}
+
+.howitworks-section > p {
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-align: center;
+  width: 50%;
+  color: #7DCFED;
+  opacity: 0.5;
+  margin-bottom: 2em;
+}
+
+.howitworks-description {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.howitworks-bullets > div {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.howitworks-bullets > div > div {
+  margin-right: 2em;
+}
+
+.howitworks-bullets > div > div > h4 {
+  font-weight: 300;
+}
+
+.howitworks-bullets > div > div > p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  width: 30em;
+  color: #7DCFED;
+  opacity: 0.5;
+}
+
+.token-distribution-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.token-distribution-section::before {
+  content: '';
+  position: absolute;
+  background:no-repeat center top/50% url('/images/ellipse-road.png'), no-repeat right/35% url('/images/ellipse-road-right.png') ;
+  z-index: -1;
+  margin-top:0%;
+  height:150vh;
+  width: 100%;
+}
+
+.token-distribution-description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width:60%;
+  background: rgba(255, 255, 255, 0.01);
+  box-sizing: border-box;
+  backdrop-filter: blur(300px);
+  border-radius: 28px;
+  opacity: 0.8;
+}
+.token-distribution-description > div > ul {
+  line-height: 2em;
+}
+
+.token-distribution-description > div > ul > li {
+  list-style-type: square;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+
+.roadmap-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.roadmap-section::before {
+  content:'';
+  position: absolute;
+  background:no-repeat left top/50% url('/images/ellipse-road.png');
+  z-index: -1;
+  margin-top:-7%;
+  height:150vh;
+  width: 100%;
+}
+
+.horizontal-roadmap {
+  display: block;
+}
+.vertical-roadmap {
+  display: none;
+}
+
+.roadmap-section > p {
+  width:50%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.ecosystem-section {
+  width: 100%;
+  min-height:80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.ecosystem-section::before {
+  content:'';
+  position: absolute;
+  background:no-repeat center top/50% url('/images/ellipse-road.png');
+  z-index: -1;
+  margin-top:-10%;
+  height:100vh;
+  width: 100%;
+}
+
+.ecosystem-section > h1 {
+  font-weight: 300;
+}
+
+.ecosystem-section > p {
+  font-weight: 300;
+  font-size: 0.8rem
+}
+
+.ecosystem-section > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%
+}
+
+.ecosystem-section > div > div {
+  border:1px solid #0D7DD1;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+  width: 20em;
+  height: 12em;
+  margin: 2em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ecosystem-section > div > div > div {
+  width: 40%;
+  border-radius: 0.4em;
+  overflow: hidden;
+  margin: 0 1em
+}
+
+.ecosystem-section > div > div > div > h4 {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.ecosystem-section > div > div > div > p {
+  font-weight: 300;
+  color: #405680;
+  font-size: 0.7rem;
+}
+
+.ecosystem-section > div > div > div > a > button {
+  color: linear-gradient(90deg, #6096FD 0%, #FA798D 107.58%);
+  font-weight: 300;
+  background: linear-gradient(90deg, #6096FD 0%, #FA798D 107.58%);
+  border-radius: 0.5em;
+  cursor: pointer
+}
+
+.ecosystem-section > div > div > div > button {
+  color: linear-gradient(90deg, #6096FD 0%, #FA798D 107.58%);
+  font-weight: 300;
+  background: linear-gradient(90deg, #6096FD 0%, #FA798D 107.58%);
+  border-radius: 0.5em;
+  cursor: pointer
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.footer > h1 > span {
+  color: #6096FD;
+  font-size: 0.9rem;
+}
+
+.footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer > div > a {
+  width: 3em;
+}
+
+/*********
+RESPONSIVE
+**********/
+
+@media only screen and (max-width: 1070px){
+  
+  .hero-section::before {
+    background-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 980px){
+  .ecosystem-section {
+    height:100vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header > nav > ul > a > li  {
+    margin: 1em;
+  }
+  
+  .hero-section {
+    background-size: 100%;
+    height:110vh;
+    width: 100%;
+    flex-direction: column;
+  }
+  .hero-section::before {
+    background-size: 100%;
+    margin-top:-40%;
+  }
+
+  .hero-description {
+    text-align: center;
+    width: 60%;
+  }
+
+  .hero-description > div > a > button {
+    margin: 0 1em;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  
+  .hero-section::before {
+    margin-top:-100%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+
+  .hero-section{
+    flex-direction: flex-start;
+    height: 900px;
+  }
+
+  .howitworks-description {
+    flex-direction: column;
+  }
+
+  .howitworks-section {
+    height: 200vh;
+    width: 100%;
+    margin-top: 6em;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction: column;
+  }
+  
+  .howitworks-section::before {
+    content: '';
+    position: absolute;
+    background:url('/images/vector.png') no-repeat;
+    background-size: cover;
+    z-index: -1;
+    margin-top:0%;
+    height:110vh;
+    width: 100%;
+  }
+
+  .token-distribution-description {
+    flex-direction: column;
+  }
+
+  .roadmap-section {
+    height: 150vh;
+  }
+
+  .horizontal-roadmap {
+    display: none
+  }
+
+  .vertical-roadmap {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  .hero-section::before {
+    margin-top:-170%;
+  }
+
+  .rapidButton > button {
+    margin: 0;
+   }
+}
+
+@media only screen and (max-width:600px) {
+  
+  header {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 14em;
+  }
+  header > h1 {
+    margin: 0.5em 0 0 0;
+  }
+
+  header > nav {
+    margin: 0;
+  }
+
+  header > nav > ul > a > li  {
+    margin: 0em 1em;
+    font-size: 1.1rem;
+  }
+
+  .hero-section {
+    margin-top: 0em;
+    height: 1000px;
+  }
+
+  .hero-section::before {
+    margin-top:-110%;
+    content: '';
+    position: absolute;
+    background:url('/images/waves.png') no-repeat right 35%, url('/images/circuits.png') no-repeat right 50%, url('/images/ellipse-right.png') no-repeat right 20% ;
+  }
+
+  .hero-description > div > a > button {
+    margin: 0.5em 1em;
+  }
+
+  .howitworks-section {
+    height: 82em;
+    width: 100%;
+    margin-top: 4em;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction: column;
+  }
+
+  .howitworks-section > h1 {
+    width: 80%;
+    text-align: center;
+  }
+
+  .howitworks-section > p {
+    width: 70%;
+  }
+
+  .howitworks-bullets {
+    padding: 0 1em;
+  }
+
+  .howitworks-bullets > div > div > p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    width: 20em;
+    color: #7DCFED;
+    opacity: 0.5;
+  }
+
+  .token-distribution-section {
+    height: 55em;
+  }
+
+  .roadmap-section {
+    height: 60em;
+  }
+
+  .ecosystem-section {
+    height: 40em;
+  }
+  .ecosystem-section > div > div {
+    margin: 0.5em 0.5em;
+    height: 15em;
+  }
+  .footer {
+    height: 10em;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:400px) {
+
+  .hero-section {
+    height: 67em;
+  }
+
+  .hero-section::before {
+    margin-top:-180%;
+  }
+
+  .howitworks-section {
+    height: 80em;
+    width: 100%;
+  }
+
+  .token-distribution-section {
+    height: 50em;
+  }
+
+  .roadmap-section {
+    height: 50em;
+  }
+
+  .ecosystem-section {
+    height: 50em;
+  }
+
+  .bullets-img {
+    display: none
+  }
+  .ecosystem-section > h1 {
+    text-align: center;
+  }
+
+  .ecosystem-section > p {
+    text-align: center;
+  }
+
+  .ecosystem-section > div > div {
+    margin: 0.5em 0.5em;
+    height: 15em;
+  }
+
+  .footer {
+    height: 5em;
+  }
+  .footer > div > a {
+    width: 2em;
+  
+    
+  }
+}
+
+@media only screen and (max-width:330px) {
+
+  .hero-section::before {
+    margin-top:-220%;
+  }
+
+  .hero-description > h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section > div {
+    width: 90%;
+  }
+
+
+  header > nav > ul > a > li  {
+    margin: 0em 0.5em;
+    font-size: 1.1rem;
+  }
+
+  .howitworks-description > div {
+    width: 90%;
+  }
+
+  .bullets-img {
+    display: none
+  }
+
+  .ecosystem-section > p {
+    margin:1rem;
+    text-align: center;
+  }
+
+  .footer  {
+    flex-direction: column;
+    height:5em;
+  }
+
+  
+  .footer > div > a {
+    width: 1.5em;
+  }
+}

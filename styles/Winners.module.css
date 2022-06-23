@@ -1,0 +1,48 @@
+.main {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    padding: 2em;
+    background:url('/images/waves.png') no-repeat right 35%, #4B2E70;
+}
+
+.main > hr {
+    width: 100%;
+    margin: 2em 0;
+}
+
+.main > table {
+    text-align: center;
+    border: 0.15em solid black;
+  
+}
+
+.main > table > tbody > tr > td {
+    border: 0.1em solid black;
+    padding: 0.5em 1em;
+}
+
+.emphasis {
+    color: gold;
+}
+
+@media (max-width: 700px) {
+
+    .main > h1 {
+        text-align: center;
+    }
+
+    .main > p {
+        text-align: center;
+    }
+
+    .main > table > tbody > tr > td {
+        word-break: break-all;
+    
+    }
+
+}

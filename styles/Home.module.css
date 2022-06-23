@@ -1,0 +1,29 @@
+.container {
+  padding: 0 0;
+  background-color: black;
+  opacity: 0.95;
+  height: 100vh;
+}
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+.container > div > a {
+  margin: 2em 2em;
+  padding: 1em 2em;
+  border-radius: 1em;
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+}
+
+.container > div > a:hover {
+  background-color: yellow;
+}

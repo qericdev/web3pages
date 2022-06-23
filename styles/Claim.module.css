@@ -1,0 +1,116 @@
+.container {
+    color: white;
+    background-color: #422A62;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container > header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container > header > h1 {
+    margin: 0;
+}
+
+.container > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container > section > button {
+    padding: 1em 1em;
+    border: 0.2em solid #FA798D;
+    border-radius: 1em;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    background: linear-gradient(90deg, #6096FD 0%, #422A62 107.58%);
+}
+
+.slotMachineGlobal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.3em solid black;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.slotMachineGlobal > div > button {
+    padding: 1em 1em;
+    border: 0.2em solid #FA798D;
+    border-radius: 1em;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    background: linear-gradient(90deg, #6096FD 0%, #422A62 107.58%);
+}
+
+.slotMachine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #623179;
+    flex-direction: column;
+}
+
+.slots  {
+    display: flex;
+    flex-direction: row;
+}
+
+.slotCentral {
+    background-color: #774686;
+}
+
+.slots > div {
+    width: 9em;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slots > div > img {
+    width: 4em;
+    height: 4em;
+}
+
+.slotMachineBoard {
+    width: 8em;
+    height: 18em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #393D41;
+}
+
+.slotMachineBoard > img {
+    width: 70%;
+    cursor: pointer;
+}
+
+.slotMachineBoard > img:hover {
+    transform: scale(0.9); 
+}
+
+.slotMachineBoard > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+    width: 80%;
+    height: 2em;
+    background-color: #6096FD;
+    border-radius: 0.7em;
+}

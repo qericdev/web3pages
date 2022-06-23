@@ -1,0 +1,185 @@
+.main {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    padding: 2em;
+    background:url('/images/waves.png') no-repeat right 35%, #4B2E70;
+  }
+  
+  .footer {
+    display: flex;
+    padding: 2rem 0;
+    border-top: 1px solid gray;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #302045;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  .image {
+    width: 15em;
+    margin-left: 20%;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .description {
+    line-height: 1;
+    margin: 2rem 0;
+    font-size: 1.1 rem;
+    width: 30em;
+  }
+  
+  .button {
+    border-radius: 4px;
+    background-color: blue;
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    margin-bottom: 2%;
+  }
+
+
+  .slotMachineGlobal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18em;
+    border: 0.2em solid black;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.slotMachine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #302045;
+    flex-direction: column;
+}
+
+.slots  {
+    display: flex;
+    flex-direction: row;
+}
+
+.slotCentral {
+    background-color: white;
+}
+
+.slots > div {
+    width: 9em;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slots > div > img {
+    width: 4em;
+    height: 4em;
+}
+
+.slotMachineBoard {
+    width: 7em;
+    height: 18em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #393D41;
+}
+
+.slotMachineBoard > img {
+    width: 70%;
+    cursor: pointer;
+}
+
+.slotMachineBoard > img:hover {
+    transform: scale(0.9); 
+}
+
+.slotMachineBoard > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+    width: 80%;
+    height: 2em;
+    font-size: 0.7rem;
+    background-color: #302045;
+    border-radius: 0.7em;
+}
+
+.emphasis {
+  color:#F5B300;
+  font-weight: 700;
+}
+
+  @media (max-width: 1200px) {
+    .main {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    .description {
+      width: 20em;
+      
+    }
+    .slots > div {
+      width: 5em;
+  }
+    .slots > div > img {
+      width: 3em;
+      height: 3em;
+    }
+    .footer {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .slots > div {
+      width: 4em;
+  }
+    .slots > div > img {
+      width: 2.5em;
+      height: 2.5em;
+    }
+  }
+
+  @media (max-width: 340px) {
+    .description {
+      width: 15em;
+      
+    }
+    .slots > div {
+      width: 3em;
+  }
+    .slots > div > img {
+      width: 2em;
+      height: 2.5em;
+    }
+  }
+  
+
+
+
+
+  

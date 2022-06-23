@@ -1,0 +1,159 @@
+
+    .container {
+      
+        font-family:'Courier New', Courier, monospace;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        min-height: 450px;
+        max-height:450px;
+        border: 4px solid #FA798D;
+        border-radius: 3em;
+      
+    }
+
+    .show {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        animation-name: appear;
+        animation-duration: 2s;
+        min-height: 400px;
+        color: white;
+    }
+
+    @keyframes appear {
+        0% {
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        100% {
+            opacity: 1;
+            overflow: hidden;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .h1 {
+        margin: 0.5em 0 0 0;
+        padding: 0.5em;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .loader {
+        width: 8em;
+        animation-name: rotate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        position: absolute;
+        bottom: 4em;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0);
+        }
+
+        50% {
+            transform: rotate(180deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .button {
+        position: absolute;
+        bottom: 2em;
+        background-color: #FDA758;
+        border: 0.2em solid #573353;
+        border-radius: 1em;
+        padding: 1em;
+        width: 15em;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #573353;
+        cursor: pointer;
+    }
+
+    .buttonLink {
+        margin-top: 0.5em;
+        background-color: #FDA758;
+        border: 0.2em solid #573353;
+        border-radius: 1em;
+        padding: 0.1em;
+        width: 7em;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #573353;
+        cursor: pointer;
+        margin-bottom: 0.5em;
+    }
+
+    .button:hover {
+        border-color: gray;
+    }
+
+    .img {
+        width: 80%;
+    }
+
+    .p {
+        margin: 1em 2em 0 2em;
+        text-align: center;
+        font-size: 0.8rem;
+        text-transform: uppercase
+    }
+
+    .selectors {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 1em;
+    }
+
+    .links {
+        margin-right: 2em;
+        margin-left: 2em;
+        font-weight: 800;
+        cursor: pointer;
+        animation-name: colorChange;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes colorChange {
+        50% {
+            color:gold;
+        }
+    }
+
+    .littleCircleFull {
+        width: 0.7em;
+        height: 0.7em;
+        margin: 0 0.1em 0 0.1em;
+        border-radius: 50%;
+        background-color: #573353;
+    }
+
+    .littleCircleEmpty {
+        width: 0.7em;
+        height: 0.7em;
+        margin: 0 0.1em 0 0.1em;
+        border-radius: 50%;
+        border: 0.1em solid #573353;
+        background-color: white;
+    }
+ 
