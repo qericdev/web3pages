@@ -138,7 +138,7 @@ const getProviderOrSigner = async (needSigner = false) => {
       <Head>
         <title>Aidrop And ICO Event</title>
         <meta name="description" content="Whitelist-Dapp" />
-        <link rel="icon" href="/7.ico" />
+        <link rel="icon" href="/7.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </Head>
       <div className={styles.main}>
