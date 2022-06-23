@@ -9,8 +9,8 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Web3 Innovation</title>
-        <meta name="description" content="Habit Tracker powered by Blockchain Technology." />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Powered by Blockchain Technology." />
+        <link rel="icon" href="/7.png" />
         <style>
           @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap");
         </style>
